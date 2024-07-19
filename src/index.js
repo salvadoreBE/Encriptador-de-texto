@@ -4,6 +4,7 @@ const clearButton = document.querySelector('.restart-button');
 const desencriptarButton = document.querySelector('.second-button');
 
 document.addEventListener('DOMContentLoaded', function() {
+
     textarea.addEventListener('input', function() {
         if (textarea.value.length > 0) {
             submitButton.disabled = false;
@@ -13,20 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
             clearButton.disabled = true;
             submitButton.disabled = true;
             desencriptarButton.disabled = true;
+            verificarOutput();
         }
     })
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const outputDiv = document.querySelector('.output-div');
-//     outputDiv.addEventListener('fullscreenchange', function() {
-//         if () {
+const verificarOutput = () => {
+    const contenedor = document.querySelector('.output-div');
+    if (contenedor.querySelector('.output-encrypted')) {
+        clearButton.disabled = false;
+    } else {
+        clearButton.disabled = true;
+    }
 
-//         } else {
-
-//         }
-//     })
-// });
+}
 
 const revertFunction = () => {
     const text = textarea.value;
@@ -107,15 +108,13 @@ document.addEventListener('DOMContentLoaded', function() {
     clearButton.addEventListener('click', function() {
         clearFunction();
     });
-})
 
-document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (event.target && event.target.classList.contains('copy-button')) {
             copyFunction(event.target);
         }
     });
-});
+})
 
 const copyFunction = (copyButton) => {
     const encryptedTextElement = document.querySelector('.encrypted-text');
