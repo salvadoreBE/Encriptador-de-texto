@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-Demo</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="contents">
+        <div class="input-content">
+          <header class="input-content-header-logo">
+            <img src="./assets/image.png" class="logo">
+            <h1 class="typing-effect"></h1>
+          </header>
+          <div class="restart-div">
+            <button class="restart-button" disabled><img src="./assets/revision-regular-72.png" class="restart-icon">Reiniciar Encriptador</button>
+            <div class="alert-div">
+              <span class="alert-span">No se permiten letras mayúsculas ni caracteres con acentos. <img src="./assets/error-regular-72.png" class="alert-error-icon"></span>
+            </div>
+          </div>
+          <div class="input-content-text">
+            <textarea class="input-text" placeholder="Ingrese el Texto Aqui. . ."></textarea>
+          </div>
+          <div class="input-content-buttons">
+            <p class="alert-p"><img src="./assets/error-circle-solid-24 (1).png" class="alert-icon">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons-div">
+              <button class="first-button" disabled>Encriptar</button>
+              <button class="second-button" disabled>Desencriptar</button>
+            </div>
+          </div>
+        </div>
+        <div class="output-content">
+          <div class="output-div">
+            <img src="./assets/image2.png" class="output-img">
+            <div class="output-text">
+              <p class="text-1">Ningún mensaje fue encontrado</p>
+              <p class="text-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <script type="module" src="./src/index.js"></script>
+    <script type="module" src="./src/animation.js"></script>
+  </body>
+</html>
