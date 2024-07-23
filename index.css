@@ -500,6 +500,7 @@ body {
 
     .contents {
         gap: 5px;
+        min-height: 100%;
     }
 
     .input-content {
