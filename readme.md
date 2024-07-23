@@ -23,5 +23,5 @@ se trata de un encriptador de texto interactivo y dinamico, cuyo objetivo es rec
 Para utilizar el encriptador de manera adecuada, debes ingresar tu entrada de texto en el apartado "Ingrese el Texto Aqui. . .", una vez hayas colocado el texto correctamente, podras encriptar o desencriptar el texto deseado con los botones `Encriptar` y `Desencriptar`, su tu texto es valido, es decir, que no contiene letras mayusculas ni acentos, entonces se mostrara tu resultado en el lugar correspondiente, si deseas reinciciar el encriptador por cualquier motivo, puedes hacerlo con el boton `Reiniciar encriptador`. Una vez que encriptes o desencriptes tu texto podras copiarlo con el boton `Copiar` y entonces colocar el resultado en la entrada de texto, para desencriptar o encriptar segun lo desees.
 
 ## Cómo acceder
-Para ingresar a la pagina deployada, ingresa en el siguiente enlace: <a href="https://salvadorebe.github.io/encriptador-de-texto/" target="_blank"> Ingresa Aqui 💻 </a>
+Para ingresar a la pagina deployada, ingresa en el siguiente enlace: <a href="https://salvadorebe.github.io/encriptador-de-texto/"> Ingresa Aqui 💻 </a>
 
