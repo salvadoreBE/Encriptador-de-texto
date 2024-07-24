@@ -10,7 +10,7 @@
 4. [Cómo acceder](#acceder)
 
 ## Descripción
-se trata de un encriptador de texto interactivo y dinamico, cuyo objetivo es recibir una entrada de texto por parte del usuaro, y luego mediante unas reglas de encriptacion impuestas, se procesa dicha entrada de texto para devolver un texto encriptado en un espacio aparte, la entrada que el usuario deba ingresar tendra ciertas reglas, lo cual es validado por el sistema para saber si el texto ingresado es correcto o debe lanzar una alerta de error. El resultado que el usuario obtenga tambien puede ser copiado y desencriptado para obtener el texto inicial ingresado. El texto que ingreses no puede tener letras mayusculas ni acentos, ademas, el proceso de encriptacion consiste en el cambio de las letras vocales en el texto por otras cadenas de texto, `Por ej: "a" se convierte en ai`
+se trata de un encriptador de texto interactivo y dinamico, cuyo objetivo es recibir una entrada de texto por parte del usuaro, y luego mediante unas reglas de encriptacion impuestas, se procesa dicha entrada de texto para devolver un texto encriptado en un espacio aparte, la entrada que el usuario deba ingresar tendra ciertas reglas, lo cual es validado por el sistema para saber si el texto ingresado es correcto o debe lanzar una alerta de error. El resultado que el usuario obtenga tambien puede ser copiado y desencriptado para obtener el texto inicial ingresado. El texto que ingreses no puede tener letras mayusculas ni acentos, ademas, el proceso de encriptacion consiste en el cambio de las letras vocales en el texto por otras cadenas de texto, `Por ej: "a" se convierte en "ai"`
 
 ## 🔨 Funcionalidades
 - `Funcionalidad #1` Recibir una entrada de texto por parte del usuario
