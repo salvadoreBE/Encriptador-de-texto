@@ -28,7 +28,7 @@ Para ingresar a la pagina deployada, ingresa en el siguiente enlace: <a href="ht
 
 ## Capturas 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/9728b2c4-e2a6-4873-b2bb-7ea287ea5d8f" width="900" height="500">  
-  <img src="https://github.com/user-attachments/assets/bbc319f1-c806-4216-8aed-bf572c3efb87" width="900" height="500"> 
+  <img src="https://github.com/user-attachments/assets/9728b2c4-e2a6-4873-b2bb-7ea287ea5d8f" width="450" height="250">  
+  <img src="https://github.com/user-attachments/assets/bbc319f1-c806-4216-8aed-bf572c3efb87" width="450" height="250"> 
 </div>
 
