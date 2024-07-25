@@ -6,7 +6,7 @@ const desencriptarButton = document.querySelector('.second-button');
 document.addEventListener('DOMContentLoaded', function() {
 
     textarea.addEventListener('input', function() {
-        if (textarea.value.length > 0) {
+        if (!textarea.value == '') {
             submitButton.disabled = false;
             desencriptarButton.disabled = false;
             clearButton.disabled = false;
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             desencriptarButton.disabled = true;
             verificarOutput();
         }
+        console.log('Texto en textarea: ', textarea.value);
     })
 });
 
@@ -35,6 +36,9 @@ const revertFunction = () => {
     const newText = desencryptText(text);
     encryptedTextElement.textContent = newText;
     clearButton.disabled = false;
+    textarea.value = '';
+    submitButton.disabled = true;
+    desencriptarButton.disabled = true;
 }
 
 const submitFunction = () => {
@@ -43,6 +47,9 @@ const submitFunction = () => {
     const newText = encryptText(text);
     encryptedTextElement.textContent = newText;
     clearButton.disabled = false;
+    textarea.value = '';
+    submitButton.disabled = true;
+    desencriptarButton.disabled = true;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
