@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
             desencriptarButton.disabled = true;
             verificarOutput();
         }
-        console.log('Texto en textarea: ', textarea.value);
     })
 });
 
@@ -55,7 +54,7 @@ const submitFunction = () => {
 document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.querySelector('.output-div');
     submitButton.addEventListener('click', function() {
-        if (containsInvalidChars(textarea.value)) {
+        if (containsValidChars(textarea.value)) {
             showAlert();
             return;
         } else {
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.querySelector('.output-div');
     desencriptarButton.addEventListener('click', function() {
-        if (containsInvalidChars(textarea.value)) {
+        if (containsValidChars(textarea.value)) {
             showAlert();
             return;
         } else {
@@ -139,9 +138,9 @@ const copyFunction = (copyButton) => {
         });
 };
 
-const containsInvalidChars = (text) => {
-    const invalidCharsPattern = /[A-ZÁÉÍÓÚáéíóú]/;
-    return invalidCharsPattern.test(text);
+const containsValidChars = (text) => {
+    const validCharsPattern = /[^a-z0-9!¡?¿]/;
+    return validCharsPattern.test(text);
 };
 
 const showAlert = () => {
