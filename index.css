@@ -153,13 +153,8 @@ body {
     color: #0A3871;
 }
 
-.first-button:disabled {
-    opacity: 0.5;
-    cursor:default;
-}
-
-.second-button:disabled {
-    opacity: 0.5;
+.first-button:disabled, .second-button:disabled {
+    opacity: 0.6;
     cursor:default;
 }
 
@@ -290,6 +285,11 @@ body {
     color: #0A3871;
     border: 1px solid #0A3871;
     padding: 10px;
+}
+
+.copy-icon {
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 

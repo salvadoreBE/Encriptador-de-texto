@@ -130,7 +130,6 @@ const copyFunction = (copyButton) => {
             copyButton.classList.add('copied');
             copyButton.innerHTML = `
                 <p>Copiado</p>
-                <img src="./assets/check-regular-24.png" class="check-icon">
                 `;
         })
         .catch(err => {
@@ -139,7 +138,7 @@ const copyFunction = (copyButton) => {
 };
 
 const containsValidChars = (text) => {
-    const validCharsPattern = /[^a-z0-9!¡?¿]/;
+    const validCharsPattern = /[^a-z0-9!¡?¿ ]/;
     return validCharsPattern.test(text);
 };
 
